@@ -31,7 +31,7 @@ elif status and not last_status[db_key]:
         send_telegram_message(f"⚠️ [장애발생] {db_type.upper()} 서버 확인 필요\n에러: {e}")
         return False
 
-```python
+```
 
 ---
 
@@ -48,3 +48,5 @@ def check_mysql():
     except Exception as e:
         save_log(f"❌ MySQL 연결 실패: {e}")
         return False, 0
+```
+---
