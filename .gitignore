@@ -1,0 +1,5 @@
+﻿venv/
+.env
+*.log
+db_monitor_log.txt
+__pycache__/
