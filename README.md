@@ -30,3 +30,15 @@ elif status and not last_status[db_key]:
         # 장애 발생 시 텔레그램 전송 로직 호출
         send_telegram_message(f"⚠️ [장애발생] {db_type.upper()} 서버 확인 필요\n에러: {e}")
         return False
+
+# 가용성 체크 및 지연 시간 측정
+def check_mysql():
+    start = time.time()
+    try:
+        conn = pymysql.connect(..., connect_timeout=2)
+        conn.close()
+        latency = round((time.time() - start) * 1000, 2) # 응답 속도(ms) 계산
+        return True, latency
+    except Exception as e:
+        save_log(f"❌ MySQL 연결 실패: {e}")
+        return False, 0
