@@ -50,3 +50,14 @@ def check_mysql():
         return False, 0
 ```
 ---
+
+### 3. 로그 기록 및 장애 이력 관리
+모든 이벤트는 타임스탬프와 함께 파일로 기록되어, 사후 장애 분석(Post-mortem) 자료로 활용할 수 있습니다.
+
+```python
+def save_log(message):
+    now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    with open("db_monitor_log.txt", "a", encoding="utf-8") as f:
+        f.write(f"[{now}] {message}\n")
+```
+---
