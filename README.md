@@ -33,7 +33,7 @@ elif status and not last_status[db_key]:
 
 ```
 
-![image alt](https://github.com/hyunholee9204/AI-TrustDW/blob/ee8a6c48279a47f6a4e588315c3d7121f1d87eb0/dataset1.jpg)
+![image alt](https://github.com/hyunholee9204/DB_Monitoring_System/blob/fce04c5f2877846e5333dff8f03a211d82b21dcf/telegram.jpg)
 
 ---
 
