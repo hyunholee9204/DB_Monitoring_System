@@ -1,6 +1,7 @@
 # 🚀 Multi-DB Monitoring & Alert System
-
-본 프로젝트는 DBA의 일상적인 운영 업무 자동화를 위해 설계된 **실시간 다중 데이터베이스 모니터링 시스템**입니다. Oracle, MySQL, PostgreSQL의 가용성을 동시에 감시하며, 장애 발생 및 복구 시 텔레그램을 통해 즉각적인 알림을 제공합니다.
+ 
+본 프로젝트는 DBA의 일상적인 운영 업무 자동화를 위해 설계된 **실시간 다중 데이터베이스 모니터링 시스템**입니다.   
+Oracle, MySQL, PostgreSQL의 가용성을 동시에 감시하며, 장애 발생 및 복구 시 텔레그램을 통해 즉각적인 알림을 제공합니다.
 
 ## 🛠 주요 기능 및 기술적 특징
 - **Multi-Vendor Support**: `oracledb`, `pymysql`, `psycopg2`를 활용한 이기종 DB 통합 관리.
